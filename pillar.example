@@ -14,6 +14,8 @@ apache:
     logdir: /var/log/apache2
     wwwdir: /srv/apache2
 
+    customlogformat: common
+
     # apache version (generally '2.2' or '2.4')
     version: '2.2'
 
@@ -65,7 +67,7 @@ apache:
 
       LogLevel: warn
       ErrorLog: /path/to/logs/example.com-error.log # E.g.: /var/log/apache2/example.com-error.log
-      CustomLog: /path/to/logs/example.com-access.log # E.g.: /var/log/apache2/example.com-access.log
+      CustomLog: /path/to/logs/example.com-access.log common # E.g.: /var/log/apache2/example.com-access.log
 
       DocumentRoot: /path/to/www/dir/example.com # E.g., /var/www/example.com
 

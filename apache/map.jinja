@@ -20,6 +20,7 @@
         'logdir': '/var/log/apache2',
         'logrotatedir': '/etc/logrotate.d/apache2',
         'wwwdir': '/var/www',
+        'customlogformat': 'common',
     },
     'Debian': {
         'server': 'apache2',
@@ -45,6 +46,7 @@
         'logdir': '/var/log/apache2',
         'logrotatedir': '/etc/logrotate.d/apache2',
         'wwwdir': '/srv',
+        'customlogformat': 'common',
     },
     'RedHat': {
         'server': 'httpd',
@@ -68,6 +70,7 @@
         'logrotatedir': '/etc/logrotate.d/httpd',
         'wwwdir': '/var/www',
         'default_charset': 'UTF-8',
+        'customlogformat': 'common',
     },
     'Suse': {
         'server': 'apache2',
@@ -87,6 +90,7 @@
         'default_site_ssl': 'vhost-ssl.template',
         'logdir': '/var/log/apache2',
         'wwwdir': '/srv/www',
+        'customlogformat': 'common',
     },
     'FreeBSD': {
         'server': 'apache22',
@@ -110,6 +114,7 @@
         'default_site_ssl': 'default-ssl',
         'logdir': '/var/log/',
         'wwwdir': '/usr/local/www/apache22/',
+        'customlogformat': 'common',
     },
     'Arch': {
         'server': 'apache',
@@ -128,6 +133,7 @@
         'wwwdir': '/srv/http',
         'default_site': 'default',
         'default_site_ssl': 'default-ssl',
+        'customlogformat': 'common',
     },
 }, merge=salt['grains.filter_by']({
     'precise': {
